@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+	id 'application'
+}
+
+group 'io.hychou'
+version '1.0-SNAPSHOT'
+
+application{
+	mainClassName= 'io.hychou.Main'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    compile group: 'org.apache.commons', name: 'commons-math3', version: '3.0'
+    // https://mvnrepository.com/artifact/org.jblas/jblas
+    compile group: 'org.jblas', name: 'jblas', version: '1.2.3'
+}
